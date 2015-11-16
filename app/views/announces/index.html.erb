@@ -7,6 +7,7 @@
       <th>Title</th>
       <th>Description</th>
       <th>Price</th>
+      <th>City</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -17,6 +18,7 @@
         <td><%= announce.title %></td>
         <td><%= announce.description %></td>
         <td><%= announce.price %></td>
+        <td><%= announce.city %></td>
         <td><%= link_to('Show', announce) %></td>
         <td><%= link_to('Edit', edit_announce_path(announce)) if current_user %></td>
         <td><%= link_to('Destroy', announce, method: :delete, data: { confirm: 'Are you sure?' }) if current_user %></td>
