@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Announces</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Price</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @announces.each do |announce| %>
+      <tr>
+        <td><%= announce.title %></td>
+        <td><%= announce.description %></td>
+        <td><%= announce.price %></td>
+        <td><%= link_to 'Show', announce %></td>
+        <td><%= link_to 'Edit', edit_announce_path(announce) %></td>
+        <td><%= link_to 'Destroy', announce, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Announce', new_announce_path %>
