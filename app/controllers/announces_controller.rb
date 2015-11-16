@@ -1,4 +1,5 @@
 class AnnouncesController < ApplicationController
+  skip_before_action :authenticate_user!, only: [:index, :show, :new, :create]
   before_action :set_announce, only: [:show, :edit, :update, :destroy]
 
   # GET /announces

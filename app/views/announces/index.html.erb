@@ -1,4 +1,3 @@
-<p id="notice"><%= notice %></p>
 
 <h1>Listing Announces</h1>
 
@@ -18,9 +17,9 @@
         <td><%= announce.title %></td>
         <td><%= announce.description %></td>
         <td><%= announce.price %></td>
-        <td><%= link_to 'Show', announce %></td>
-        <td><%= link_to 'Edit', edit_announce_path(announce) %></td>
-        <td><%= link_to 'Destroy', announce, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to('Show', announce) %></td>
+        <td><%= link_to('Edit', edit_announce_path(announce)) if current_user %></td>
+        <td><%= link_to('Destroy', announce, method: :delete, data: { confirm: 'Are you sure?' }) if current_user %></td>
       </tr>
     <% end %>
   </tbody>

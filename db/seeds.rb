@@ -5,3 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Announce.create(title: "Ordinateur", description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim saepe commodi, debitis, veritatis aliquid natus dolores consequuntur quas dolor ex incidunt ab aliquam nam obcaecati quibusdam impedit similique optio voluptatibus!", price: 999.0)
+Announce.create(title: "Ipad", description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim saepe commodi, debitis, veritatis aliquid natus dolores consequuntur quas dolor ex incidunt ab aliquam nam obcaecati quibusdam impedit similique optio voluptatibus!", price: 750.0)
+Announce.create(title: "Chien", description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim saepe commodi, debitis, veritatis aliquid natus dolores consequuntur quas dolor ex incidunt ab aliquam nam obcaecati quibusdam impedit similique optio voluptatibus!", price: 8750.0)
